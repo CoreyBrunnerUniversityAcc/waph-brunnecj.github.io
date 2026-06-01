@@ -2,16 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WAPH Individual Project 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="bootstraptemplate/css/styles.css" type="text/css">
 </head>
-<body>  
-    <div id="container">
-        <div id="top">
-            <h1> Web Application Programming and Hacking</h1>
-            <h2> Front-end Web Development Individual Project 1 </h2>
-            <h3>Instrcutor: Dr. Phu Phung</h3>
-            
+<body id ="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Corey Brunner</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="bootstraptemplate/assets/img/HeadShot.jpg" alt="..." /></span>
+        </a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#class-student-information">Class and Student Information</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>   
+            </ul>
         </div>
+    </nav>
+</body>
+<body>  
+    <div class="container-fluid p-0">
+        <!-- Class and Student Information -->
+        <section class="resume-section" id="class-student-information">
+            <div class="resume-section-content">
+                <h1>Web Application Programming and Hacking</h1>
+                <h2>Front-end Web Development Individual Project 1 </h2>
+                <h3>Instrcutor: Dr. Phu Phung</h3>
+                <h3>Student: Corey Brunner</h3>
+                <button id ="show-email" onclick="ShowHideEmail()">Show My Email</button> <a id="emailInfo" href="mailto:brunnecj@mail.uc.edu"></a>
+            </div>
+        </section>
         <div id="menubar">
             <h3>Student: Corey Brunner</h3>
         </div>
@@ -19,6 +51,35 @@
         <p>A simple HTML page</p><br>
             Using the <a href="https://www.w3schools.com/html/">W3Schools Template</a>
         </div>
+    </div>
+    <div id="jsScripts">
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="bootstraptemplate/js/scripts.js"></script>
+        <script type="text/javascript">
+            var emailShown = false;
+            function ShowHideEmail() {
+                if(emailShown) {
+                    document.getElementById('show-email').innerHTML = "Show My Email";
+                    document.getElementById('emailInfo').innerHTML = ""
+                    emailShown = false;
+                } else {
+                    var  myemail = "<a href='mailto:brunnecj'" + "@" + "mail.uc.edu'>brunnecj" + "@" + "mail.uc.edu</a>";
+                    document.getElementById('emailInfo').innerHTML = myemail;
+                    document.getElementById('show-email').innerHTML = "Hide My Email";
+                    emailShown = true;
+                }
+            }
+        </script>
+    </div>
+    <div id="style">
+        <style>
+            #emailInfo{
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        </style>
     </div>
 </body>
 </html>
