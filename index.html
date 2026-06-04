@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="bootstraptemplate/css/styles.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+
 </head>
 <body id ="page-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -22,12 +24,14 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#class-student-information">Class and Student Information</a></li>
+                <p style="color: white; margin: 0; margin-top: 5px; font-weight: bold;">Resume Information</p>
+                <hr style="height: 2px; background-color: white; border: none; margin-top: 0; margin-bottom: 5px;">
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#background">Background</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Experiences">Experiences</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>   
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#API">Web API Integration</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experiences">Experiences</a></li>
+                <hr style="height: 2px; background-color: white; border: none; margin-top: 0; margin-bottom: 5px;">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#other">Other Website Implementations</a></li>
             </ul>
         </div>
     </nav>
@@ -42,7 +46,6 @@
                 <h2>Front-end Web Development Individual Project 1 </h2>
                 <h3>Instrcutor: Dr. Phu Phung</h3>
                 <h3>Student: Corey Brunner</h3>
-                <a id="resume" href="Brunner_Corey_Resume_Fall2026.pdf" target="_blank" onmouseover="this.style.color='blue'" onmouseout="this.style.color='#bd5d38'">View My Resume Via PDF</a><br>
                 <button id ="show-email" onclick="ShowHideEmail()">Show My Email</button> <a class="student-information" id="emailInfo" href="mailto:brunnecj@mail.uc.edu"></a>
             </div>
         </section>
@@ -55,7 +58,8 @@
                     I have had software engineering experience at MPG - Pole/Zero where I developed and debugged company specific C# applications. Furthermore, I have worked on the .NET framework as well as LINQ and Window Forms Libraries 
                     to integrate useful forms that improve company effeciency. 
                 </p>
-                <img src="bootstraptemplate/assets/img/HeadShot.jpg" width="350px" height="350px">
+                <img src="bootstraptemplate/assets/img/HeadShot.jpg" width="350px" height="350px"> <br>
+                <a id="resume" href="Brunner_Corey_Resume_Fall2026.pdf" target="_blank" onmouseover="this.style.color='blue'" onmouseout="this.style.color='#bd5d38'">View My Resume Via PDF</a><br>
             </div>
         </section>
         <hr style="border: 10px solid #000000; width: 100%;">   
@@ -64,14 +68,122 @@
                 <h2 style="color:#bd5d38">Education</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 style="color:red;">University of Cincinnati</h3>
-                        <div class="subheading mb-3">Bachelor of Engineering and Applied Science</div>
+                        <h3 style="color:red;" class="mb-0">University of Cincinnati</h3>
+                        <div class="subheading mb-0">Bachelor of Engineering and Applied Science</div>
                         <div>Computer Science</div>
                     </div>
                     <div class="flex-shrink-0">
-                        <span class="text-primary" style="color: red; font-weight: bold;">Graduating: August 2023 - May 2028</span><br>
-                        <span class="text-primary">GPA: 3.61</span>
+                        <span style="color: red; font-weight: bold;">Graduating: August 2023 - May 2028</span><br>
+                        <span style="color: red;">GPA: 3.61</span>
                     </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between">
+                    <div class="flex-grow-1">
+                        <h3 style="color: red;" class="mb-0">University of Cincinnati</h3>
+                        <div class="subheading mb-0">Masters of Engineering</div>
+                        <div>Artificial Intelligence</div>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span style="color: red; font-weight: bold;">Graduating: August 2025 - May 2028</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr style="border: 10px solid #000000; width: 100%;">   
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 style="color: #bd5d38;">Skills</h2>
+                <span class="student-information" style="color: black;">Programming Languages: <span> <span class="enlargeText">C++, C#, CSS, HTML, JavaScript, Ajax, XML, SQL, and Python</span><br>
+                <span class="student-information" style="color: black;">Frameworks: <span> <span class="enlargeText">: Matplotlib, NumPy, scikit-learn, Pandas, LINQ, Window Forms, Bootstrap, jQuery</span><br>
+                <span class="student-information" style="color: black;">Software: <span> <span class="enlargeText">Git, PowerShell, Command Prompt, Active Directory, Remote Desktop Protocol, Jama </span><br>
+                <div class="skill-images">
+                    <img class="skill-images" height="300px" width="600 px" src="bootstraptemplate/assets/img/Sql_data_base_with_logo.svg.png" alt="">
+                    <img class="skill-images" height="300px" width="600 px" src="bootstraptemplate/assets/img/Jama_Blog.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <hr style="border: 10px solid #000000; width: 100%;">   
+        <section class="resume-section" id="experiences" style="max-width: 100%; margin-right: 10%; padding-top: 0%; padding-bottom: 0%;">
+            <div class="resume-section-content">
+                <h2 style="color:#bd5d38;">Experiences</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-0">
+                    <div class="flex-grow-1">
+                        <h3 style="color:red;" class="mb-0">MPG - Pole/Zero | Cincinnati, Ohio</h3>
+                        <div class="subheading mb-0">Software Engineering Intern</div>
+                        <ul class="bullet-point">
+                            <li>
+                                Assisted in the development of a new application that aimed to help debug test equipment and run methods via reflection
+                            </li>
+                            <li>
+                                Debugged and contributed to a shared codebase to update outdated logos and got rid of unsupported equipment classes
+                            </li>
+                            <li>
+                                Supported continuous development by enhancing an equipment calibration application by creating a UI that displayed equipment diagrams during calibration.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-shrink-0 experience-dates" style="margin-left: 50px;">
+                        <span style="color: red; font-weight: bold;">Jan 2026 – Apr 2026</span><br>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-0">
+                        <div class="flex-grow-1">
+                            <h3 style="color:red;" class="mb-0">Thermo Fisher Scientific | Cincinnati, Ohio </h3>
+                            <div class="subheading mb-0">IT Intern</div>
+                            <ul class="bullet-point">
+                                <li>
+                                    Lead and organized IT technical review board meetings across the pharmaceutical business group                           
+                                </li>
+                                <li>
+                                    Wrote automatic email PowerShell scripts to send company group information categories to managers                            
+                                </li>
+                                <li>
+                                    Assisted in the network configuration and support of computers that handle sensitive pharmaceutical data                           
+                                </li>
+                                <li>
+                                    Collaborated with the rest of the IT team to help update about 500 devices from Windows 10 to Windows 11
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="flex-shrink-0 experience-dates" style="margin-left: 50px;">
+                        <span style="color: red; font-weight: bold;">Aug 2024 – Aug 2025</span><br>
+                    </div>
+                </div>
+                    
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-0">
+                    <div class="flex-grow-1">
+                        <h3 style="color:red;" class="mb-0">Central Catholic High School | Canton, Ohio </h3>
+                        <div class="subheading mb-0">IT Student (Volunteer)</div>
+                        <ul class="bullet-point">
+                           <li>
+                                Diagnosed dozens of possible problems and disassembled 30+ school laptops                     
+                            </li>
+                            <li>
+                                Replaced dozens of broken screens, keyboards, and touchpads                            
+                            </li>
+                            <li>
+                                Trained 3+ others how to fix laptops so more laptops could be given back to students                             
+                            </li>
+                        </ul>
+                    </div>
+                        <div class="flex-shrink-0 experience-dates" style="margin-left: 50px;">
+                            <span style="color: red; font-weight: bold;">Aug 2021 – May 2023</span><br>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <hr style="border: 10px solid #000000; width: 100%;">   
+        <section class="resume-section" id="other">
+            <div class="resume-section-content mb-2">
+                <div class="other-site-info">
+                    <h2 style="color:#bd5d38;">Clock</h2>
+                    <canvas id="analog-clock" width="500" height="500" style="background-color:#999"></canvas>
+                    <script src="https://waph-phung.github.io/clock.js"></script>
+                    <div id="clock" style="color: black;"></div>
+                </div>
+                <div class="other-site-info">
+                    <h2 style="color: #bd5d38;">Page Tracker</h2>
+                    <a href="https://info.flagcounter.com/jAva"><img src="https://s01.flagcounter.com/countxl/jAva/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
                 </div>
             </div>
         </section>
@@ -85,16 +197,34 @@
             var emailShown = false;
             function ShowHideEmail() {
                 if(emailShown) {
-                    document.getElementById('show-email').innerHTML = "Show My Email";
-                    document.getElementById('emailInfo').innerHTML = ""
+                    $("#show-email").html("Show My Email");
+                    $("#emailInfo").html("");
                     emailShown = false;
                 } else {
                     var  myemail = "<a href='mailto:brunnecj'" + "@" + "mail.uc.edu'>brunnecj" + "@" + "mail.uc.edu</a>";
-                    document.getElementById('emailInfo').innerHTML = myemail;
-                    document.getElementById('show-email').innerHTML = "Hide My Email";
+                    $("#emailInfo").html(myemail);
+                    $("#show-email").html("Hide My Email");
                     emailShown = true;
                 }
             }
+            function displayTime(){
+                $("#clock").html("Current time: " + Date());
+            }
+            
+            setInterval(displayTime, 1000);
+
+            var canvas = $("#analog-clock").get(0);
+			var ctx = canvas.getContext("2d");
+			var radius = canvas.height / 2;
+			ctx.translate(radius, radius);
+			radius = radius * 0.90
+            setInterval(drawClock, 1000);
+
+				function drawClock(){
+					drawFace(ctx, radius);
+					drawNumbers(ctx, radius);
+					drawTime(ctx, radius);
+				}
         </script>
     </div>
     <div id="style">
@@ -107,11 +237,34 @@
                 font-size: 1.25rem;
                 color: black;
             }
+            .skill-images{
+                padding-top: 5%;
+                display: flex;
+                border: black;
+                align-items: center;
+                padding-right: 3%;
+            }
+            .enlargeText{
+                font-size: 1.25rem;
+                color: #6c757d;
+            }
             .student-information{
                 font-size: 1.5rem;
                 font-weight: bold;
             }
 
+            .experience-dates{
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                flex-direction: row;
+                align-items: baseline;
+            }
+            .other-site-info{
+                margin: 5%;
+                margin-left: 0%;
+            }
+            
         </style>
     </div>
 </body>
